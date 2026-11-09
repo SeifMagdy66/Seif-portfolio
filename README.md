@@ -1,57 +1,53 @@
-# Seif-portfolio
+# Seif Eldin Magdy — AI Automation Engineer
 
-Seif Eldin Magdy's static portfolio, hosted on GitHub Pages.
+I'm Seif, an AI Automation Engineer at Pollion since April 2026, based in
+Cairo, Egypt. I build AI agents, automate business workflows and develop
+internal tools that reduce repetitive work. My earlier experience in data
+science supports my work in intelligent automation.
 
-## Profile and CV
+[Visit my portfolio](https://seifmagdy66.github.io/Seif-portfolio/) ·
+[Download my CV](assets/Seif_Eldin_Magdy_AI_Automation_Engineer_CV.pdf) ·
+[LinkedIn](https://linkedin.com/in/SeifMagdy)
 
-The profile presents Seif as an AI Automation Engineer and retains data science
-as his earlier professional background. Skills cover AI agents and prompting,
-n8n, APIs, RAG, UiPath/RPA, enterprise integration and automation security.
+## My work
 
-The download button serves `assets/Seif_Eldin_Magdy_AI_Automation_Engineer_CV.pdf`.
-Its editable source is the adjacent HTML file. To regenerate the two-page PDF,
-print that HTML in Chromium using A4 paper, zero margins, background graphics
-enabled and browser headers/footers disabled. Check both pages before replacing
-the PDF; the HTML includes its own page footers.
+My work at Pollion includes:
 
-## Project showcase
+- **[Pulse](projects/pulse/)** — AI-assisted project reviews, delivery scoring,
+  client context and reporting.
+- **[Gnomon](projects/gnomon/)** — An internal workspace for attendance, working
+  hours, breaks, time off and team reporting.
+- **[Lead-generation automation](projects/lead-generation/)** — Connected
+  workflows for company research, contact enrichment, verification and delivery.
 
-The Pollion collection features Pulse, Gnomon and the lead-generation engine,
-credited as projects built together with Ziad. The homepage and case-study
-pages use the portfolio's cyan, purple and magenta palette. Pulse and Gnomon
-retain their own product branding inside centered interactive demo windows.
+The portfolio also includes four earlier machine-learning projects. The public
+demos use fictional data and do not connect to Pollion's production systems.
 
-- `projects/pulse/`: project reviews, client/PM dashboards, simulated Ask Pulse,
-  score debates, scoring walkthrough and PDF reports.
-- `projects/gnomon/`: attendance, breaks, time-off requests, manager/employee
-  views and CSV reports.
-- `projects/lead-generation/`: interactive workflow stages and a simulated
-  research, enrichment, verification and delivery journey.
+## Skills
 
-Demo data is fictional. Attendance and review actions run locally in the
-visitor's page and reset on reload; PDF report settings can remain in the
-browser's local storage. No production accounts, API keys, project records or backend
-connections are required. Reported lead-generation outcomes are attributed
-to the shared project case study rather than presented as demo measurements.
+AI agents and prompt engineering · n8n · APIs and webhooks · Vector databases
+and RAG · UiPath and RPA · OCR and document processing · Enterprise integration
+· Automation security · Python and SQL
 
-The project presentations and demo interfaces are adapted from the public
-reference supplied for this task:
-https://ziad-business-systems.berry-hero-3491.chatgpt.site/
-The personal styling, navigation, contact details and project collection are
-specific to Seif's portfolio. Tool logos identify the respective products.
-The bundled jsPDF library retains its original license header.
+## Local preview
 
-## Preview and deployment
-
-No build step is needed. From the parent directory, run:
+This is a static website with no build step. From the repository's parent
+directory, run:
 
 ```sh
 python3 -m http.server 8765
 ```
 
-Open `http://localhost:8765/Seif-portfolio/`. Serving the parent directory also
-checks the `/Seif-portfolio/` path used by GitHub Pages. All project navigation
-uses relative URLs, including iframe assets and exports.
+Open `http://localhost:8765/Seif-portfolio/`. GitHub Pages publishes the
+repository root from `main`.
 
-Publish the repository root through the existing GitHub Pages configuration.
-The four original machine-learning projects remain in the homepage collection.
+## Usage and permissions
+
+This portfolio presents my work for viewing and evaluation. It is not offered
+as a reusable project template or a license to deploy the Pollion projects.
+Reuse requires written permission unless an existing license or other right
+already allows it. Earlier MIT releases retain their granted permissions.
+See [the usage terms](LICENSE) for scope, exceptions and previously granted
+rights. Third-party libraries, fonts and other assets retain their own licenses.
+
+For permission requests, contact [seifmagdyyoussef@gmail.com](mailto:seifmagdyyoussef@gmail.com).
