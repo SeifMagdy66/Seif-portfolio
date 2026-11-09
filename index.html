@@ -5,19 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Seif Eldin Magdy - Data Scientist & Machine Learning Engineer. Building intelligent solutions with data-driven insights.">
-    <meta name="keywords" content="Data Scientist, Machine Learning, ML Engineer, Python, AI, Data Science">
+        content="Seif Eldin Magdy - AI Automation Engineer with a background in data science. Building AI agents, n8n workflows and UiPath automation for business.">
+    <meta name="keywords" content="AI Automation Engineer, AI Agents, n8n, UiPath, RPA, Prompt Engineering, APIs, Webhooks, RAG, Python">
     <meta name="author" content="Seif Eldin Magdy">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Seif Eldin Magdy | Data Scientist & ML Engineer">
-    <meta property="og:description" content="Building intelligent solutions with data-driven insights">
+    <meta property="og:title" content="Seif Eldin Magdy | AI Automation Engineer">
+    <meta property="og:description" content="Building AI agents and automations that turn complex processes into connected workflows">
 
-    <title>Seif Eldin Magdy | Data Scientist & ML Engineer</title>
+    <title>Seif Eldin Magdy | AI Automation Engineer</title>
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects/projects.css">
 
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -51,8 +52,8 @@
 
     <section id="home" class="hero">
         <h1>Seif Eldin Magdy</h1>
-        <div class="title">Data Scientist | Machine Learning Engineer</div>
-        <div class="subtitle">Building intelligent solutions with data-driven insights</div>
+        <div class="title">AI Automation Engineer</div>
+        <div class="subtitle">Building AI agents and automations that turn complex processes into connected workflows</div>
         <div class="contact-info">
             <a href="mailto:seifmagdyyoussef@gmail.com"><span class="material-icons">email</span> Email Me</a>
             <a href="https://linkedin.com/in/SeifMagdy" target="_blank"><span class="material-icons">work</span>
@@ -68,30 +69,34 @@
         <section id="about">
             <h2>About Me</h2>
             <div class="about-content">
-                <p>Welcome! I'm Seif Eldin Magdy, a passionate Data Scientist and Machine Learning Engineer based in
-                    Cairo, Egypt. I graduated with a Bachelor's degree in Management Information Systems and have
-                    dedicated myself to mastering the art of turning complex data into actionable insights.</p>
+                <p>I'm Seif Eldin Magdy, an AI Automation Engineer at Pollion, based in Cairo, Egypt.
+                    I've been working at Pollion since April 2026. I build AI agents,
+                    custom workflows and robotic process automation that connect business tools, reduce repetitive
+                    work and make everyday operations easier to manage.</p>
 
-                <p>My expertise lies in building end-to-end machine learning pipelines and deploying scalable ML systems
-                    that solve real-world business challenges. I specialize in developing predictive models using
-                    state-of-the-art techniques and frameworks including TensorFlow, PyTorch, and various ensemble
-                    methods.</p>
+                <p>At Pollion, I develop AI agents for project reviews and client context, automate company
+                    research and lead generation with n8n, and build internal tools for attendance, leave and
+                    operational reporting. I connect business tools through APIs and webhooks to reduce manual work.</p>
 
-                <p>I've successfully delivered projects achieving remarkable accuracy rates, such as a stroke severity
-                    prediction system with 96.3% accuracy using XGBoost, and optimized model performance by reducing
-                    prediction times by 40%. My approach combines rigorous feature engineering, advanced model
-                    optimization, and interpretability techniques like SHAP and LIME to ensure transparency in AI
-                    decision-making.</p>
+                <p>My AI work brings together prompt engineering, advanced prompting, open-source AI and
+                    AI content generation. I use n8n, APIs and webhooks to build agent workflows, and work with
+                    vector databases and retrieval-augmented generation (RAG) to connect AI with useful business
+                    knowledge. I also use vibe coding to prototype and develop custom tools.</p>
 
-                <p>Beyond technical skills, I serve as a judge at the Code Challenge Championship 2025, where I evaluate
-                    coding solutions and maintain high competition standards. I'm committed to continuous learning and
-                    staying at the forefront of AI and machine learning innovations.</p>
+                <p>For enterprise automation, I work with UiPath, Orchestrator and the RE Framework across
+                    Excel, user interfaces, email and document processing. My experience with IBM integration
+                    tools helps me connect systems, while automation security and human-in-the-loop steps keep
+                    sensitive decisions under human review.</p>
+
+                <p>I started in data science, including a Data Scientist internship at InternBoot in 2025.
+                    That background in Python, machine learning and data analysis now supports my work in
+                    intelligent and agentic automation. I hold a Bachelor's degree in Management Information Systems.</p>
 
                 <div class="cv-download-container">
-                    <a href="https://drive.google.com/uc?export=download&id=18uZ26xQG48bGSmPwNF7Fi6eVcp6H1ZCw"
-                        target="_blank" class="cv-download-btn">
+                    <a href="assets/Seif_Eldin_Magdy_AI_Automation_Engineer_CV.pdf"
+                        download="Seif_Eldin_Magdy_AI_Automation_Engineer_CV.pdf" class="cv-download-btn">
                         <span class="material-icons">download</span>
-                        Download CV
+                        Download AI Automation CV
                     </a>
                 </div>
             </div>
@@ -102,6 +107,49 @@
 
         <section id="projects">
             <h2>Featured Projects</h2>
+            <p class="projects-intro">AI agents, business automation and the data-science work that started my journey.<br>Explore the thinking behind the work — then try it yourself.</p>
+            <div class="project-filters" role="group" aria-label="Filter projects">
+                <button type="button" data-project-filter="all" aria-pressed="true">All work <span>07</span></button>
+                <button type="button" data-project-filter="systems" aria-pressed="false">Business systems <span>03</span></button>
+                <button type="button" data-project-filter="ml" aria-pressed="false">Machine learning <span>04</span></button>
+            </div>
+            <p class="sr-only" id="project-filter-status" role="status" aria-live="polite">Showing all 7 projects.</p>
+            <div data-project-group="systems" class="systems-collection">
+                <div class="client-heading">
+                    <div class="client-identity"><span class="client-label">BUILT FOR</span><img src="projects/assets/pollion-logo.svg" alt="Pollion" width="112" height="36"></div>
+                    <p>Built together with Ziad. Used by the Pollion team.</p>
+                    <span class="collection-status"><i></i> 3 connected systems</span>
+                </div>
+                <div class="systems-grid">
+                    <a href="projects/pulse/" class="system-card system-pulse" data-project-link>
+                        <div class="system-card-top"><span>01 / PROJECT INTELLIGENCE</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+                        <div class="system-identity"><img src="projects/assets/pulse-mark.svg" alt="Pulse logo" width="48" height="48"><div><h3>Pulse<span>.</span></h3><span>THE PROJECT INTELLIGENCE AGENT</span></div></div>
+                        <div class="system-preview"><div class="preview-bar"><i></i><i></i><i></i><span>pulse / workspace</span></div><div class="preview-image"><img src="projects/assets/pulse-portal-preview.png" alt="Pulse demo showing project scores and its project intelligence dashboard" loading="lazy" width="1440" height="1000"></div><span class="preview-open">Step inside the demo <b aria-hidden="true">↗</b></span></div>
+                        <div class="system-copy"><h4>Every finished project.<br>A clearer picture.</h4><p>An agent that reviews completed projects, explains delivery scores and builds context around each client.</p></div>
+                        <div class="system-tags"><span>AI agent</span><span>Project scoring</span><span>Client insights</span></div>
+                        <div class="system-card-footer"><span>Explore Pulse</span><span>Interactive demo <b aria-hidden="true">→</b></span></div>
+                    </a>
+                    <a href="projects/gnomon/" class="system-card system-gnomon" data-project-link>
+                        <div class="system-card-top"><span>02 / TEAM OPERATIONS</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+                        <div class="system-identity"><img src="projects/assets/gnomon-mark.svg" alt="Gnomon logo" width="48" height="48"><div><h3>Gnomon<span>.</span></h3><span>A WORKSPACE FOR THE WORKING DAY</span></div></div>
+                        <div class="system-preview"><div class="preview-bar"><i></i><i></i><i></i><span>gnomon / workspace</span></div><div class="preview-image"><img src="projects/assets/gnomon-portal-preview.png" alt="Gnomon demo with attendance, working hours and team availability" loading="lazy" width="1440" height="1000"></div><span class="preview-open">Step inside the demo <b aria-hidden="true">↗</b></span></div>
+                        <div class="system-copy"><h4>The whole workday.<br>One shared view.</h4><p>Attendance, breaks, working hours and time off, connected in a workspace for employees and managers.</p></div>
+                        <div class="system-tags"><span>Web app</span><span>Attendance</span><span>Team operations</span></div>
+                        <div class="system-card-footer"><span>Explore Gnomon</span><span>Interactive demo <b aria-hidden="true">→</b></span></div>
+                    </a>
+                    <a href="projects/lead-generation/" class="system-card system-leads" data-project-link>
+                        <div class="system-card-top"><span>03 / BACKEND AUTOMATION</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+                        <div class="system-identity"><span class="lead-mark" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M12 12 24 24 36 12M24 24v14"/><circle cx="12" cy="12" r="5"/><circle cx="36" cy="12" r="5"/><circle cx="24" cy="38" r="5"/><circle cx="24" cy="24" r="5"/></svg></span><div><h3>Lead engine<span>.</span></h3><span>FROM FIRST SIGNAL TO NEXT STEP</span></div></div>
+                        <div class="system-preview lead-mini"><div class="preview-bar"><i></i><i></i><i></i><span>lead engine / workflow</span></div><div class="mini-flow" aria-hidden="true"><svg class="mini-wires" viewBox="0 0 320 180" preserveAspectRatio="none"><path d="M58 48H160V90M58 134H160V90M160 90H260V48M160 90H260V134"/></svg><div class="mini-node mini-apollo"><img src="projects/lead-generation/logos/apollo.svg" alt=""><span>Discover</span></div><div class="mini-node mini-ai"><img src="projects/lead-generation/logos/googlegemini.svg" alt=""><span>Enrich</span></div><div class="mini-node mini-core"><img src="projects/lead-generation/logos/n8n.svg" alt=""><span>Connect</span></div><div class="mini-node mini-verify"><img src="projects/lead-generation/logos/millionverifier.svg" alt=""><span>Verify</span></div><div class="mini-node mini-sheet"><img src="projects/lead-generation/logos/googlesheets.svg" alt=""><span>Deliver</span></div></div><span class="preview-open">Follow the workflow <b aria-hidden="true">↗</b></span></div>
+                        <div class="system-copy"><h4>Many moving parts.<br>One connected process.</h4><p>A research and enrichment workflow that connects targeting, contact checks and ranked lead delivery.</p></div>
+                        <div class="system-tags"><span>n8n</span><span>API integrations</span><span>Lead enrichment</span></div>
+                        <div class="system-card-footer"><span>Explore the engine</span><span>Animated walkthrough <b aria-hidden="true">→</b></span></div>
+                    </a>
+                </div>
+                <div class="systems-note"><span>TRY THE WORK, NOT JUST THE SCREENSHOTS.</span><p>Explore realistic interfaces with fictional data. Every project opens here in the same tab.</p></div>
+            </div>
+            <div data-project-group="ml" class="ml-collection">
+            <div class="work-group-heading"><span>EARLIER WORK / DATA SCIENCE &amp; MACHINE LEARNING</span><h3>My data-science foundation</h3></div>
             <div class="projects-grid">
                 <div class="project-card">
                     <h3><span class="material-icons">local_hospital</span> Stroke Severity Prediction</h3>
@@ -213,72 +261,82 @@
                         class="github-link">View on GitHub <span class="material-icons">arrow_forward</span></a>
                 </div>
             </div>
+            </div>
         </section>
 
         <!-- Section Divider -->
         <div class="section-divider"></div>
 
         <section id="skills">
-            <h2>Technical Skills</h2>
+            <h2>Automation &amp; Technical Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3><span class="material-icons">code</span> Programming</h3>
+                    <h3><span class="material-icons">psychology</span> AI &amp; Prompt Engineering</h3>
                     <ul>
-                        <li>Python</li>
-                        <li>SQL</li>
+                        <li>AI Fundamentals</li>
+                        <li>Prompt Engineering</li>
+                        <li>Advanced Prompt Engineering</li>
+                        <li>AI in Business</li>
+                        <li>AI Content Generation</li>
+                        <li>Open-Source AI</li>
                     </ul>
                 </div>
-
                 <div class="skill-category">
-                    <h3><span class="material-icons">smart_toy</span> ML & AI</h3>
+                    <h3><span class="material-icons">smart_toy</span> AI Agents &amp; Knowledge</h3>
                     <ul>
-                        <li>TensorFlow & PyTorch</li>
-                        <li>Scikit-learn</li>
-                        <li>Deep Learning</li>
-                        <li>NLP & Computer Vision</li>
-                        <li>XGBoost & LightGBM</li>
-                        <li>Random Forest</li>
+                        <li>AI Agents</li>
+                        <li>AI Agent Workflows</li>
+                        <li>Vector Databases &amp; RAG</li>
+                        <li>Custom AI Workflows</li>
+                        <li>Agentic Automation</li>
+                        <li>Human-in-the-Loop</li>
                     </ul>
                 </div>
-
                 <div class="skill-category">
-                    <h3><span class="material-icons">bar_chart</span> Data Analysis</h3>
+                    <h3><span class="material-icons">account_tree</span> Workflow Automation</h3>
                     <ul>
-                        <li>EDA & Statistical Testing</li>
-                        <li>Time Series Analysis</li>
-                        <li>Feature Engineering</li>
-                        <li>Model Evaluation</li>
-                        <li>Regression & Clustering</li>
+                        <li>AI Automation</li>
+                        <li>n8n Automation</li>
+                        <li>APIs &amp; Webhooks</li>
+                        <li>API &amp; Email Integration</li>
+                        <li>Automation Security</li>
+                        <li>Vibe Coding</li>
+                        <li>AI automation capstone development</li>
                     </ul>
                 </div>
-
                 <div class="skill-category">
-                    <h3><span class="material-icons">build</span> Tools & Cloud</h3>
+                    <h3><span class="material-icons">precision_manufacturing</span> UiPath &amp; RPA</h3>
                     <ul>
-                        <li>Git & GitHub</li>
-                        <li>Docker</li>
-                        <li>AWS, Azure, GCP</li>
-                        <li>Gradio & Streamlit</li>
+                        <li>UiPath Automation</li>
+                        <li>RPA</li>
+                        <li>Excel &amp; UI Automation</li>
+                        <li>UiPath Orchestrator</li>
+                        <li>RE Framework</li>
+                        <li>OCR &amp; Document Processing</li>
+                        <li>AI Agents with UiPath</li>
                     </ul>
                 </div>
-
                 <div class="skill-category">
-                    <h3><span class="material-icons">trending_up</span> Visualization</h3>
+                    <h3><span class="material-icons">hub</span> Enterprise Integration</h3>
                     <ul>
-                        <li>Power BI</li>
-                        <li>Tableau</li>
-                        <li>Dashboards</li>
+                        <li>Intelligent Automation</li>
+                        <li>Enterprise Automation</li>
+                        <li>IBM ACE &amp; API Connect</li>
+                        <li>IBM DataPower &amp; MQ</li>
+                        <li>Apache Kafka</li>
+                        <li>REST &amp; SOAP</li>
+                        <li>OAuth 2.0, TLS &amp; API Security</li>
                     </ul>
                 </div>
-
                 <div class="skill-category">
-                    <h3><span class="material-icons">gps_fixed</span> Soft Skills</h3>
+                    <h3><span class="material-icons">analytics</span> Data Science Foundation</h3>
                     <ul>
-                        <li>Research & Problem Solving</li>
-                        <li>Team Work</li>
-                        <li>Communication</li>
-                        <li>Critical Thinking</li>
-                        <li>Presentation Skills</li>
+                        <li>Python &amp; SQL</li>
+                        <li>Machine Learning Pipelines</li>
+                        <li>Scikit-learn &amp; XGBoost</li>
+                        <li>Data Analysis &amp; Feature Engineering</li>
+                        <li>SHAP &amp; LIME</li>
+                        <li>Power BI &amp; Tableau</li>
                     </ul>
                 </div>
             </div>
@@ -331,8 +389,8 @@
         <section id="contact">
             <h2>Get In Touch</h2>
             <div class="about-content" style="text-align: center;">
-                <p style="font-size: 1.2rem; margin-bottom: 2rem;">I'm always interested in discussing new
-                    opportunities, collaborations, or just connecting with fellow data enthusiasts!</p>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem;">Have a process to automate or an AI agent to build? Let's discuss your workflow,
+                    the tools your team uses and where automation can make a difference.</p>
                 <div class="contact-info" style="justify-content: center;">
                     <a href="tel:+201032301529"><span class="material-icons">phone</span> +201032301529</a>
                     <a href="mailto:seifmagdyyoussef@gmail.com"><span class="material-icons">email</span>
@@ -350,11 +408,12 @@
 
     <footer>
         <p>&copy; <span id="currentYear">2024</span> Seif Eldin Magdy. All rights reserved.</p>
-        <p style="margin-top: 0.5rem; opacity: 0.8;">Built with passion for Data Science and Machine Learning</p>
+        <p style="margin-top: 0.5rem; opacity: 0.8;">AI agents. Connected workflows. Automation built around your business.</p>
     </footer>
 
     <!-- JavaScript -->
     <script src="script.js"></script>
+    <script src="projects/showcase.js"></script>
     <script>
         // Update copyright year
         document.getElementById('currentYear').textContent = new Date().getFullYear();

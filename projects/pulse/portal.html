@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src 'none'; img-src 'self' data: blob:; font-src 'self'; style-src 'self' 'unsafe-inline'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#153a33">
+  <meta name="description" content="Explore Pulse’s real portal design using fictional data. Built by Ziad Ahmed for Pollion.">
+  <title>Pulse | Interactive portfolio demo</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="demo-only.css">
+  <script src="vendor/jspdf.umd.min.js" defer>
+</script>
+  <script src="mock-data.js" defer>
+</script>
+<script src="mock-interactions.js" defer>
+</script>
+<script src="disputes.js" defer>
+</script>
+  <script src="export-core.js" defer>
+</script>
+  <script src="export.js" defer>
+</script>
+  <script src="script.js" defer>
+</script>
+  <script src="mock-chat.js" defer>
+</script>
+</head>
+<body class="embedded-portal">
+<div class="portfolio-demo-bar">
+<a href="../../index.html#projects">← Seif's portfolio</a>
+<span>PUBLIC DEMO · Fictional data · No production connections</span>
+<a href="mailto:seifmagdyyoussef@gmail.com?subject=A%20Pulse-like%20tool%20for%20my%20business">Build a tool like this ↗</a>
+</div>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Main navigation">
+      <a class="brand" href="#overview" aria-label="Pulses overview">
+<span class="brand-symbol" data-icon="pulse" aria-hidden="true">
+</span>
+<span class="brand-copy">
+<strong>Pulse<span class="brand-dot">.</span>
+</strong>
+<small>BY POLLION</small>
+</span>
+</a>
+      <div class="workspace-label">DEMO WORKSPACE</div>
+      <nav class="main-nav">
+        <a href="#overview" data-nav="overview" class="nav-link active">
+<span class="nav-icon" data-icon="overview">
+</span> Overview</a>
+        <a href="#projects" data-nav="projects" class="nav-link">
+<span class="nav-icon" data-icon="projects">
+</span> Projects <span class="nav-count">5</span>
+</a>
+        <a href="#pms" data-nav="pms" class="nav-link">
+<span class="nav-icon" data-icon="users">
+</span> PM Dashboard</a>
+        <a href="#clients" data-nav="clients" class="nav-link">
+<span class="nav-icon" data-icon="briefcase">
+</span> Client Dashboard</a>
+        <a href="#ask" data-nav="instructions" class="nav-link">
+<span class="nav-icon" data-icon="ask-pulse">
+</span> Ask Pulse</a>
+        <a href="#disputes" data-nav="disputes" class="nav-link">
+<span class="nav-icon" data-icon="review">
+</span> Score debates</a>
+<a href="#how" data-nav="how" class="nav-link">
+<span class="nav-icon" data-icon="activity">
+</span> How the agent works</a>
+<a href="#export" data-nav="export" class="nav-link">
+<span class="nav-icon" data-icon="file">
+</span> Export</a>
+      </nav>
+      <div class="sidebar-bottom">
+<div class="side-note">
+<span class="side-note-icon" data-icon="pulse">
+</span>
+<strong>Designed for clarity</strong>
+<p>Every score opens into the evidence and reasoning behind it.</p>
+</div>
+<div class="user-chip">
+<span class="avatar">A</span>
+<span>
+<strong>Demo reviewer</strong>
+<small>Fictional workspace</small>
+</span>
+</div>
+</div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+<button id="menu-button" class="menu-button" aria-label="Toggle navigation" aria-expanded="false">
+<span data-icon="menu">
+</span>
+</button>
+<div class="breadcrumbs" id="breadcrumbs">Workspace <span>/</span> Overview</div>
+<div class="topbar-right">
+<span class="demo-pill">
+<span class="live-dot">
+</span> MOCK DATA</span>
+<span class="top-avatar">A</span>
+</div>
+</header>
+
+      <section id="overview-view" class="view">
+        <div class="page-heading">
+<div>
+<span class="eyebrow">PULSES / INSPECTION CENTER</span>
+<h1>Welcome to Pulse</h1>
+<p>One clear view of the work behind every project evaluation.</p>
+</div>
+<button class="outlined-button" id="view-projects">Explore projects <span data-icon="arrow-up-right">
+</span>
+</button>
+</div>
+        <div class="hero-panel">
+<div class="hero-copy">
+<span class="hero-kicker">
+<span data-icon="pulse">
+</span> PULSES WORKSPACE</span>
+<h2>Every project has<br>a story behind its score.</h2>
+<p>See the complete picture, from overall trends to the exact findings behind each evaluation.</p>
+<button id="hero-browse">Browse the project library <span data-icon="arrow-right">
+</span>
+</button>
+<div class="hero-footnote">
+<span class="hero-footnote-icon" data-icon="check">
+</span> <span id="hero-count-note">Fictional project evaluations</span>
+</div>
+</div>
+<div class="hero-feature" role="img" aria-label="Pulses logo: a bright pulse wave flowing through a circular signal mark">
+<div class="pulse-emblem">
+<span class="pulse-orbit pulse-orbit-outer">
+</span>
+<span class="pulse-orbit pulse-orbit-inner">
+</span>
+<span class="pulse-core">
+</span>
+<svg class="pulse-wave" viewBox="0 0 520 210" aria-hidden="true" focusable="false">
+<defs>
+<linearGradient id="wave-color" x1="0" x2="1">
+<stop offset="0" stop-color="#b9e6a5"/>
+<stop offset=".5" stop-color="#e3fa85"/>
+<stop offset="1" stop-color="#b9e6a5"/>
+</linearGradient>
+<filter id="wave-glow" x="-20%" y="-80%" width="140%" height="260%">
+<feGaussianBlur stdDeviation="8"/>
+</filter>
+</defs>
+<path class="wave-echo" d="M10 107 H152 L176 107 L194 135 L219 46 L245 168 L272 76 L294 107 H510"/>
+<path class="wave-glow" d="M10 107 H152 L176 107 L194 135 L219 46 L245 168 L272 76 L294 107 H510"/>
+<path class="wave-main" d="M10 107 H152 L176 107 L194 135 L219 46 L245 168 L272 76 L294 107 H510"/>
+<circle class="wave-node" cx="219" cy="46" r="6"/>
+</svg>
+<span class="pulse-spark pulse-spark-one">
+</span>
+<span class="pulse-spark pulse-spark-two">
+</span>
+</div>
+<div class="pulse-lockup">
+<strong>PULSES<span>.</span>
+</strong>
+<span class="pulse-lockup-rule">
+</span>
+<small>Every signal has a story</small>
+</div>
+</div>
+</div>
+        <div class="section-title-row">
+<div>
+<span class="eyebrow">PERFORMANCE SNAPSHOT</span>
+<h2>Overview</h2>
+</div>
+<span class="sample-label">
+<span id="overview-selection-note">Final evaluations</span>
+</span>
+</div>
+        <div class="stat-grid" id="stat-grid">
+</div>
+        <div class="insights-grid">
+<div class="panel">
+<div class="panel-heading">
+<div>
+<h3>Projects by month</h3>
+<p>Final order volume</p>
+</div>
+<span class="panel-icon" data-icon="chart">
+</span>
+</div>
+<div id="month-chart" class="month-chart">
+</div>
+</div>
+<div class="panel">
+<div class="panel-heading">
+<div>
+<h3>Top clients</h3>
+<p>Projects by client</p>
+</div>
+<span class="panel-icon" data-icon="users">
+</span>
+</div>
+<div id="client-chart" class="client-chart">
+</div>
+</div>
+</div>
+        <div class="section-title-row pm-overview-heading">
+<div>
+<span class="eyebrow">TEAM PERFORMANCE</span>
+<h2>PM overview</h2>
+</div>
+<a class="text-button" href="#pms">Open PM Dashboard →</a>
+</div>
+<div id="pm-overview" class="pm-overview-grid">
+</div>
+        <div class="section-title-row recent-heading">
+<div>
+<span class="eyebrow">RECENT ACTIVITY</span>
+<h2>Latest sample projects</h2>
+</div>
+<button class="text-button" id="all-projects">View all projects →</button>
+</div>
+<div id="recent-projects" class="recent-list">
+</div>
+      </section>
+
+      <section id="projects-view" class="view hidden">
+<div class="page-heading">
+<div>
+<span class="eyebrow">BROWSE / ALL PROJECTS</span>
+<h1>Project library</h1>
+<p>Find a project by month, client, PM or service type. Pending and canceled rows are labeled.</p>
+</div>
+<div class="library-count" id="library-count">5 projects</div>
+</div>
+<div class="months" id="month-tabs" aria-label="Months">
+</div>
+<div class="filter-panel">
+<label class="search-wrap">
+<span data-icon="search">
+</span>
+<input id="search-input" type="search" placeholder="Search order ID, project, client…" aria-label="Search projects">
+</label>
+<div class="filter-dropdown" data-filter="client">
+<span class="filter-label">CLIENT</span>
+<button type="button" class="filter-trigger" aria-haspopup="listbox" aria-expanded="false" aria-controls="client-menu">
+<span class="filter-current">All clients</span>
+<span data-icon="chevron-down">
+</span>
+</button>
+<div id="client-menu" class="filter-menu" role="listbox" aria-label="Client options">
+</div>
+</div>
+<div class="filter-dropdown" data-filter="pm">
+<span class="filter-label">PM</span>
+<button type="button" class="filter-trigger" aria-haspopup="listbox" aria-expanded="false" aria-controls="pm-menu">
+<span class="filter-current">All PMs</span>
+<span data-icon="chevron-down">
+</span>
+</button>
+<div id="pm-menu" class="filter-menu" role="listbox" aria-label="PM options">
+</div>
+</div>
+<div class="filter-dropdown" data-filter="section">
+<span class="filter-label">SERVICE</span>
+<button type="button" class="filter-trigger" aria-haspopup="listbox" aria-expanded="false" aria-controls="section-menu">
+<span class="filter-current">All services</span>
+<span data-icon="chevron-down">
+</span>
+</button>
+<div id="section-menu" class="filter-menu" role="listbox" aria-label="Section options">
+</div>
+</div>
+<button id="reset-filters" class="reset-button">Reset</button>
+</div>
+<div id="deduction-filter-note" class="deduction-filter-note hidden" aria-live="polite">
+</div>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>ORDER ID / PROJECT</th>
+<th>CLIENT</th>
+<th>SERVICE</th>
+<th>OWNER PM</th>
+<th>DATE</th>
+<th>SCORE</th>
+<th>
+</th>
+</tr>
+</thead>
+<tbody id="project-rows">
+</tbody>
+</table>
+<div id="empty-state" class="empty-state hidden">No projects match these filters. Try another month or clear a filter.</div>
+</div>
+<button id="projects-more" type="button" class="outlined-button" hidden>Show more projects</button>
+</section>
+
+      <section id="pms-view" class="view hidden">
+<div class="page-heading">
+<div>
+<span class="eyebrow">TEAM / PERFORMANCE</span>
+<h1>PM Dashboard</h1>
+<p>
+<span id="pm-heading-sub">Compare project volume and scores across the selected final demo records.</span>
+</p>
+</div>
+<a class="outlined-button" href="#projects">Browse projects <span data-icon="arrow-up-right">
+</span>
+</a>
+</div>
+<div class="pm-note">
+<span data-icon="activity">
+</span>
+<span>Selected-order analysis only: PM score is the simple average of these displayed orders. It is not the official PM-period result, which requires all eligible final orders and Plunet USD price weighting.</span>
+</div>
+<div id="pm-stats" class="pm-stats">
+</div>
+<div class="pm-dashboard-grid">
+<div class="panel pm-chart-panel">
+<div class="panel-heading">
+<div>
+<h3>Projects by PM</h3>
+<p>Workload in the demo selection</p>
+</div>
+<span class="panel-icon" data-icon="projects">
+</span>
+</div>
+<div id="pm-volume-chart" class="pm-bars">
+</div>
+</div>
+<div class="panel pm-chart-panel">
+<div class="panel-heading">
+<div>
+<h3>Average score by PM</h3>
+<p>Equal-weight project average</p>
+</div>
+<span class="panel-icon" data-icon="activity">
+</span>
+</div>
+<div id="pm-score-chart" class="pm-bars">
+</div>
+</div>
+</div>
+<div class="section-title-row pm-detail-heading">
+<div>
+<span class="eyebrow">INDIVIDUAL ANALYSIS</span>
+<h2>Each PM at a glance</h2>
+</div>
+<span class="sample-label">Open any order for its inspection details</span>
+</div>
+<div id="pm-cards" class="pm-cards">
+</div>
+</section>
+
+      <section id="pm-detail-view" class="view hidden">
+<div class="detail-back-row">
+<a class="back-button" href="#pms">← Back to PM dashboard</a>
+</div>
+<div id="pm-detail-content">
+</div>
+</section>
+
+      <section id="export-view" class="view hidden">
+        <div class="page-heading export-heading">
+<div>
+<span class="eyebrow">PULSES / REPORT STUDIO</span>
+<h1>Export reports</h1>
+<p>Build a branded PDF from the final orders in the fictional demo records.</p>
+</div>
+<span class="export-admin-badge">Demo export</span>
+</div>
+        <div id="export-snapshot-note" class="export-note">
+</div>
+        <div class="export-workspace">
+          <form id="export-form" class="export-builder">
+            <div class="export-builder-head">
+<span class="eyebrow">CREATE A REPORT</span>
+<h2>Choose your analysis</h2>
+<p>Set the report type, time range and subject.</p>
+</div>
+            <div class="export-field">
+<span>Report type</span>
+<select id="export-type">
+<option value="pm">PM performance</option>
+<option value="client">Client account</option>
+<option value="period">Time period</option>
+<option value="service">Service quality</option>
+</select>
+</div>
+            <div class="export-field">
+<span>Time range</span>
+<select id="export-period">
+<option value="last-month">Last calendar month</option>
+<option value="last-quarter">Last calendar quarter</option>
+<option value="custom">Custom dates</option>
+<option value="sample" selected>All demo orders</option>
+</select>
+</div>
+            <div id="export-custom-dates" class="export-dates hidden">
+<label class="export-field">From<input id="export-start" type="date">
+</label>
+<label class="export-field">To<input id="export-end" type="date">
+</label>
+</div>
+            <div id="export-subject">
+</div>
+            <div id="export-form-error" class="export-form-error hidden" role="alert">
+</div>
+            <button class="export-generate" type="submit">Generate PDF report <span data-icon="arrow-right">
+</span>
+</button>
+          </form>
+          <div class="export-intro-panel">
+<span class="export-intro-icon" data-icon="file">
+</span>
+<span class="eyebrow">PREPARED FOR REVIEW</span>
+<h2>Detailed reports, ready to share when approved.</h2>
+<p>Each PDF includes project context, score analysis, relevant evidence links and clear notes about any missing comparison data.</p>
+<div class="export-mini-grid">
+<span>PM strengths and improvements</span>
+<span>Client account signals</span>
+<span>Period comparison</span>
+<span>Service analysis</span>
+</div>
+<p class="export-mail-note">Demo PDFs contain fictional records only. This workspace does not send reports or contact people.</p>
+</div>
+        </div>
+        <div id="export-progress" class="export-progress" role="status" aria-live="polite" hidden>
+<div class="export-progress-heading">
+<span class="eyebrow">REPORT PROGRESS</span>
+<strong id="export-progress-stage">Preparing report</strong>
+</div>
+<progress id="export-progress-bar" max="100" value="0" aria-label="Report progress">
+</progress>
+<p id="export-progress-detail">Please keep this page open.</p>
+</div>
+        <div class="section-title-row export-library-heading">
+<div>
+<span class="eyebrow">GENERATED IN THIS BROWSER</span>
+<h2>Report library</h2>
+</div>
+<span id="export-library-count" class="sample-label">0 reports</span>
+</div>
+        <div id="export-library" class="export-library">
+</div>
+      </section>
+
+      <section id="clients-view" class="view hidden">
+<div class="page-heading">
+<div>
+<span class="eyebrow">CLIENTS / ACCOUNT VIEW</span>
+<h1>Client Dashboard</h1>
+<p>Project volume, services and score trends from final evaluations.</p>
+</div>
+<a class="outlined-button" href="#projects">Browse projects <span data-icon="arrow-up-right">
+</span>
+</a>
+</div>
+<div class="pm-note">
+<span data-icon="activity">
+</span>
+<span>Scores describe inspected delivery. They do not directly measure client satisfaction or predict whether a client will leave. Prices are grouped by their original currency.</span>
+</div>
+<div id="client-stats" class="pm-stats">
+</div>
+<div class="panel client-dashboard-panel">
+<div class="panel-heading">
+<div>
+<h3>Clients by project volume</h3>
+<p>Final orders in the fictional dataset</p>
+</div>
+<span class="panel-icon" data-icon="chart">
+</span>
+</div>
+<div id="client-volume-chart" class="pm-bars">
+</div>
+</div>
+<div class="section-title-row pm-detail-heading">
+<div>
+<span class="eyebrow">CLIENT PROFILES</span>
+<h2>Each client at a glance</h2>
+</div>
+</div>
+<div id="client-cards" class="client-cards">
+</div>
+</section>
+
+      <section id="client-detail-view" class="view hidden">
+<div class="detail-back-row">
+<a class="back-button" href="#clients">← Back to clients</a>
+</div>
+<div id="client-detail-content">
+</div>
+</section>
+
+      <section id="instructions-view" class="view hidden">
+  <div class="ask-workspace">
+    <div class="ask-chat-top">
+<span class="ask-chat-avatar" data-icon="pulse">
+</span>
+<div>
+<strong>Ask Pulse</strong>
+<small>Portfolio demo · simulated replies</small>
+</div>
+<a class="ask-guide-button" href="#how" id="demo-guide" title="Read how the demo scoring works">
+<span data-icon="file">
+</span>
+<span>Scoring guide</span>
+</a>
+</div>
+    <div class="ask-conversation" id="ask-conversation" role="log" aria-live="polite" aria-label="Conversation with Pulse">
+<div class="ask-welcome">
+<span class="ask-welcome-icon" data-icon="pulse">
+</span>
+<h2>How can I help?</h2>
+<p>This is a portfolio demo. Send a message to preview the chat experience; Ask Pulse is not connected to the live agent or project data. Attachments stay in this browser and are not analyzed.</p>
+<div class="ask-suggestions">
+<button type="button" data-question="Why did my latest project lose points?">Why did my latest project lose points?</button>
+<button type="button" data-question="How does the deadline score work?">How does the deadline score work?</button>
+<button type="button" data-question="Show me projects with quality deductions">Show me projects with quality deductions</button>
+</div>
+</div>
+</div>
+    <div id="ask-order-context" class="ask-order-context" hidden>
+</div>
+    <div id="ask-attachments" class="ask-attachments" hidden>
+</div>
+    <form id="ask-form" class="ask-composer">
+<input id="ask-files" class="sr-only" type="file" accept=".pdf,application/pdf,image/png,image/jpeg,image/webp" multiple>
+<button type="button" id="ask-add-file" class="ask-add-file" aria-label="Attach image or PDF" title="Attach image or PDF">+</button>
+<label for="ask-question" class="sr-only">Message Pulse</label>
+<textarea id="ask-question" name="question" rows="2" maxlength="2000" placeholder="Message Pulse..." aria-label="Message Pulse">
+</textarea>
+<button type="submit" id="ask-send" aria-label="Send message">
+<span data-icon="arrow-right">
+</span>
+<span>Send</span>
+</button>
+</form>
+    <p id="ask-error" class="ask-error" role="alert" hidden>
+</p>
+  </div>
+</section>
+<section id="disputes-view" class="view hidden">
+<div id="disputes-content">
+</div>
+</section>
+      <section id="dispute-view" class="view hidden">
+<div id="dispute-content">
+</div>
+</section>
+
+      <section id="how-view" class="view hidden">
+<div class="page-heading">
+<div>
+<span class="eyebrow">MEET THE AGENT / INSPECTOR PULSE</span>
+<h1>From project evidence to a traceable score.</h1>
+<p>A portfolio-only walkthrough of the automated workflow behind Pulse.</p>
+</div>
+</div>
+<aside class="demo-automation-note">
+<strong>This tab is only part of the portfolio demo.</strong>
+<p>It is not a tab in the main project. The real Pulse agent works automatically: it tracks each completed project, starts reviewing the project evidence and applies the scoring instructions. The manual controls below are just a way to explore example scenarios.</p>
+</aside>
+<div class="demo-how-hero">
+<span class="demo-how-mark" data-icon="pulse">
+</span>
+<div>
+<h2>The agent investigates. The portal makes it usable.</h2>
+<p>Inspector Pulse automatically reviews completed projects using their records, communications, delivery evidence and external feedback. It follows versioned scoring instructions and explains the result. Reviewed projects build a case history for understanding how Pollion works with each client, spotting recurring issues and improving the next delivery. The portal brings those findings into project reports, PM and client views, questions, reviews and exports.</p>
+<p>
+<b>Built by Ziad Ahmed for Pollion.</b> This public version recreates the interface with invented records and scripted interactions; it does not access email, Plunet or client portals.</p>
+</div>
+</div>
+<div class="agent-process">
+<article>
+<span>01</span>
+<h3>Identify the project</h3>
+<p>Start with an eligible order and verify its owner, scope and client commitments.</p>
+</article>
+<article>
+<span>02</span>
+<h3>Read authorized evidence</h3>
+<p>Use case-linked emails, the relevant client portal and Plunet order facts. Training explains the workflow; it is not case evidence.</p>
+</article>
+<article>
+<span>03</span>
+<h3>Reconstruct the timeline</h3>
+<p>Link actionable messages, replies, accepted deadlines, deliveries and external feedback to the responsible project phase.</p>
+</article>
+<article>
+<span>04</span>
+<h3>Apply the instructions</h3>
+<p>Calculate communication, deadline, quality and order-record checks using the selected rule version. Explain deductions rather than inventing a score.</p>
+</article>
+<article>
+<span>05</span>
+<h3>Preserve gaps and review</h3>
+<p>Missing required evidence creates a Technical Hold. Material contradictions go to Pending Review. Neither is a perfect score or a zero.</p>
+</article>
+<article>
+<span>06</span>
+<h3>Present and revisit</h3>
+<p>Publish a traceable audit for review. Use dashboards and debates to investigate findings; human reviewers remain responsible for decisions.</p>
+</article>
+</div>
+<div class="demo-rules-note">
+<b>Scoring version matters.</b> This demonstration follows the V.02.00 Ziad test-workflow shape: communication 28, deadline 28, quality 39, Plunet checks 5. Client/resource communication split is 56/3 and 28/3 points. The original V.01.01 guide uses a separate 30/30/40 model. These are scoped versions, not interchangeable company-wide rules. Calculations keep precision; only display values are rounded.</div>
+<div class="demo-simulator panel">
+<div class="panel-heading">
+<div>
+<span class="eyebrow">TRY A FICTIONAL INSPECTION</span>
+<h2>See how facts affect the result.</h2>
+<p>These manual scenario controls are for demonstration only. In the main project, completed projects trigger the review and scoring automatically.</p>
+</div>
+</div>
+<form id="inspection-form">
+<label>
+<span>Evidence coverage</span>
+<select id="inspection-coverage" name="coverage">
+<option value="complete">Evidence complete</option>
+<option value="missing">Source unavailable</option>
+<option value="conflict">Evidence conflict</option>
+</select>
+</label>
+<label>
+<span>Client delivery</span>
+<select id="inspection-delivery" name="delivery">
+<option value="ontime">On time</option>
+<option value="late8">8 minutes late</option>
+<option value="late40">40 minutes late</option>
+<option value="files">4 files: 3 on time, 1 late</option>
+</select>
+</label>
+<label>
+<span>External client feedback</span>
+<select id="inspection-quality" name="quality">
+<option value="none">No adverse feedback</option>
+<option value="minor">One minor correction</option>
+<option value="rework">Meaningful rework</option>
+</select>
+</label>
+<button type="submit">Run demo inspection →</button>
+</form>
+<div id="inspection-progress" role="status" aria-live="polite">
+</div>
+<div id="inspection-result" hidden>
+</div>
+</div>
+</section>
+<section id="evidence-view" class="view hidden">
+<div id="evidence-content">
+</div>
+</section>
+<section id="detail-view" class="view hidden">
+<div class="detail-back-row">
+<button id="back-to-projects" class="back-button">← Back to projects</button>
+<span class="demo-pill">
+<span class="live-dot">
+</span> FICTIONAL DEMO ROW</span>
+</div>
+<div id="detail-content">
+</div>
+</section>
+      <footer>Pulse portfolio demo <span>·</span> <span id="footer-snapshot">Fictional records</span> <span>·</span> No live sync or production connections</footer>
+    </main>
+  </div>
+</body>
+</html>

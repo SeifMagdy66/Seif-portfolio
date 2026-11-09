@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0a0a12">
+<meta name="description" content="A visual journey through the backend lead-generation automation Seif and Ziad built together for Pollion.">
+<title>Lead Generation — Seif Eldin Magdy</title>
+<link rel="icon" href="logos/n8n.svg">
+<link rel="stylesheet" href="../pulse/showcase.css">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer>
+</script>
+<link rel="stylesheet" href="../detail-theme.css">
+<script src="../showcase.js" defer>
+</script>
+</head>
+<body class="project-detail">
+<div class="detail-atmosphere" aria-hidden="true">
+</div>
+<header class="page-nav">
+<a class="back" data-project-link href="../../index.html#projects">← Back to my work</a>
+<span>SEIF MAGDY <i>/</i> SELECTED WORK 03</span>
+<a class="contact" href="mailto:seifmagdyyoussef@gmail.com?subject=Let%27s%20automate%20a%20business%20workflow">Let's build something ↗</a>
+</header>
+<main>
+<div class="project-switcher" aria-label="Explore projects">
+<a data-project-link href="../pulse/">
+<span>01</span>Pulse<b aria-hidden="true">↗</b>
+</a>
+<a data-project-link href="../gnomon/">
+<span>02</span>Gnomon<b aria-hidden="true">↗</b>
+</a>
+<a data-project-link href="../lead-generation/" aria-current="page">
+<span>03</span>Lead engine<b aria-hidden="true">↗</b>
+</a>
+</div>
+<div class="client-ribbon">
+<span>COLLABORATIVE WORK FOR</span>
+<img src="../assets/pollion-logo.svg" alt="Pollion">
+<span>AI agents · Internal tools · Automation</span>
+</div>
+<section class="engine-intro">
+<div>
+<div class="eyebrow">
+<span>
+</span> BACKEND AUTOMATION · BUILT FOR POLLION</div>
+<h1>Meet the lead engine<span>.</span>
+</h1>
+<p class="hero-line">Many moving parts.<br>
+<em>One connected workflow.</em>
+</p>
+<p class="intro-text">A manual lead-generation process, rebuilt as a connected n8n workflow for Pollion—from targeting and research to enrichment, checks and ranked output.</p>
+</div>
+<div class="architecture-note">
+<span class="note-symbol">↳</span>
+<strong>Built together with Ziad. Used at Pollion.</strong>
+<p>The project connected the full process: understanding the operation, integrating the tools through their APIs, and creating a workflow the team could run.</p>
+<span class="source-chip">134 workflow nodes <i>·</i> One connected process</span>
+</div>
+</section>
+<section class="project-impact" aria-label="Reported project outcomes">
+<div class="impact-heading">
+<span class="section-number">THE BUSINESS RESULT</span>
+<span>Reported project outcomes</span>
+</div>
+<div class="impact-grid">
+<div class="impact-stat">
+<strong>~40<span>h / week</span>
+</strong>
+<p>The manual process before automation</p>
+<small>A recurring team workflow, rebuilt around one-click execution.</small>
+</div>
+<div class="capacity-change">
+<div>
+<span>Company research capacity / week</span>
+<b>800 <i>→</i> 4,200</b>
+</div>
+<div class="capacity-row">
+<span>Before</span>
+<i style="--capacity:19.05%">
+</i>
+<b>800</b>
+</div>
+<div class="capacity-row after">
+<span>After</span>
+<i style="--capacity:100%">
+</i>
+<b>4,200</b>
+</div>
+</div>
+<div class="impact-stat uplift">
+<strong>~5<span>× capacity</span>
+</strong>
+<p>More research capacity from a connected process</p>
+<small>Companies per week—not a count of qualified contacts or guaranteed sales.</small>
+</div>
+</div>
+</section>
+<section class="project-story">
+<div>
+<span class="section-number">THE ORIGINAL PROBLEM</span>
+<h2>The process was taking<br>the team’s time.</h2>
+<p>Every week, people searched for companies, checked whether their websites were active, extracted emails, found people by job title, checked roles on LinkedIn and copied the results into a sheet.</p>
+<p>The work crossed several tools, but the connections between them depended on people repeating the same steps.</p>
+</div>
+<div class="project-contribution">
+<span class="section-number">HOW THE WORKFLOW WAS BUILT</span>
+<h3>Understand it. Connect it. Make it repeatable.</h3>
+<p>The operation was mapped, its costly manual steps identified, and the tools connected through their APIs. Targeting, website research, contact enrichment, verification and structured output became parts of one workflow.</p>
+<p>The aim was to give the team more capacity and more time for work that needed their judgment. The automation became part of Pollion’s lead-generation operations.</p>
+</div>
+</section>
+<section class="engine-section" aria-labelledby="engine-heading">
+<div class="engine-heading">
+<div>
+<span class="section-number">01 / FOLLOW THE SIGNAL</span>
+<h2 id="engine-heading">A network with a purpose.</h2>
+<p>Tap any block to see its role, or watch a sample journey.</p>
+</div>
+<div class="run-actions">
+<button id="run-flow">
+<span class="play-icon">▶</span> Watch the workflow</button>
+<button id="reset-flow" class="reset-flow" aria-label="Reset the workflow visualization">↺</button>
+</div>
+</div>
+<div class="engine-canvas" id="engine-canvas">
+<div class="canvas-top">
+<span>
+<i>
+</i> THE BACKEND, MADE VISIBLE</span>
+<span id="run-status" role="status" aria-live="polite">Illustrated architecture · Ready to explore</span>
+</div>
+<div class="flow-grid" id="flow-grid">
+<svg id="connections" aria-hidden="true">
+</svg>
+<button class="flow-node node-brief" data-stage="brief" aria-pressed="true">
+<span class="node-top">
+<span>01 / Campaign inputs</span>
+<span class="node-arrow">↗</span>
+</span>
+<span class="logo-tile input">
+<span class="brief-symbol">↳</span>
+</span>
+<strong>Start with a brief</strong>
+<span class="node-copy">Define the market, job titles and lead quantity.</span>
+<span class="node-state">Explore stage <i>→</i>
+</span>
+</button>
+<button class="flow-node node-discover" data-stage="discover" aria-pressed="false">
+<span class="node-top">
+<span>02 / Apollo</span>
+<span class="node-arrow">↗</span>
+</span>
+<span class="logo-tile apollo">
+<img src="logos/apollo.svg" alt="Apollo logo">
+</span>
+<strong>Find the right companies</strong>
+<span class="node-copy">Company search, then filter and deduplicate.</span>
+<span class="node-state">Explore stage <i>→</i>
+</span>
+</button>
+<button class="flow-node node-scrape" data-stage="scrape" aria-pressed="false">
+<span class="node-top">
+<span>03 / Apify · Bright Data</span>
+<span class="node-arrow">↗</span>
+</span>
+<span class="logo-tile scrapers">
+<img src="logos/apify.svg" alt="Apify logo">
+<img class="wide-logo" src="logos/brightdata.png" alt="Bright Data logo">
+</span>
+<strong>Read beyond the homepage</strong>
+<span class="node-copy">Extract website signals and contact information.</span>
+<span class="node-state">Explore stage <i>→</i>
+</span>
+</button>
+<button class="flow-node node-enrich" data-stage="enrich" aria-pressed="false">
+<span class="node-top">
+<span>04 / Apollo · Gemini</span>
+<span class="node-arrow">↗</span>
+</span>
+<span class="logo-tile enrich">
+<img src="logos/apollo.svg" alt="Apollo logo">
+<img class="symbol-logo" src="logos/googlegemini.svg" alt="Google Gemini logo">
+</span>
+<strong>Find the right person</strong>
+<span class="node-copy">Expand titles, match roles and enrich contacts.</span>
+<span class="node-state">Explore stage <i>→</i>
+</span>
+</button>
+<button class="flow-node node-verify" data-stage="verify" aria-pressed="false">
+<span class="node-top">
+<span>05 / MillionVerifier</span>
+<span class="node-arrow">↗</span>
+</span>
+<span class="logo-tile verify">
+<img src="logos/millionverifier.svg" alt="MillionVerifier logo">
+</span>
+<strong>Check the email</strong>
+<span class="node-copy">Route addresses using the verification result.</span>
+<span class="node-state">Explore stage <i>→</i>
+</span>
+</button>
+<button class="flow-node node-deliver" data-stage="deliver" aria-pressed="false">
+<span class="node-top">
+<span>06 / Google Sheets</span>
+<span class="node-arrow">↗</span>
+</span>
+<span class="logo-tile sheets">
+<img class="symbol-logo" src="logos/googlesheets.svg" alt="Google Sheets logo">
+<span class="tool-word">Google Sheets</span>
+</span>
+<strong>Make the result usable</strong>
+<span class="node-copy">Prepare structured lead rows for the team.</span>
+<span class="node-state">Explore stage <i>→</i>
+</span>
+</button>
+<button class="flow-node node-remember" data-stage="remember" aria-pressed="false">
+<span class="node-top">
+<span>07 / Progress & deduplication</span>
+<span class="node-arrow">↗</span>
+</span>
+<span class="logo-tile memory">
+<img class="symbol-logo" src="logos/googlesheets.svg" alt="Google Sheets logo">
+<span class="tool-word">State & progress</span>
+</span>
+<strong>Keep the work moving</strong>
+<span class="node-copy">Save processed companies and regional progress.</span>
+<span class="node-state">Explore stage <i>→</i>
+</span>
+</button>
+<button class="flow-node node-runtime" data-stage="runtime" aria-pressed="false">
+<span class="node-top">
+<span>08 / Railway · webhooks</span>
+<span class="node-arrow">↗</span>
+</span>
+<span class="logo-tile runtime">
+<img class="symbol-logo" src="logos/railway.svg" alt="Railway logo">
+<span class="tool-word">Railway</span>
+</span>
+<strong>Run behind the scenes</strong>
+<span class="node-copy">Continue work through backend triggers.</span>
+<span class="node-state">Explore stage <i>→</i>
+</span>
+</button>
+<div class="engine-core">
+<div class="core-orbit one">
+</div>
+<div class="core-orbit two">
+</div>
+<div class="core-body">
+<img src="logos/n8n.svg" alt="n8n logo">
+<span>THE ORCHESTRATOR</span>
+<strong>n8n</strong>
+<p>Branches. Checks.<br>Fallbacks. Continuation.</p>
+<div class="core-light">
+<i>
+</i>
+<span id="core-status">Connected by design</span>
+</div>
+</div>
+</div>
+</div>
+<div class="canvas-bottom">
+<span>Search → Research → Enrich → Verify → Deliver</span>
+<span>SIMULATED JOURNEY · NO LIVE API CALLS</span>
+</div>
+</div>
+<div class="journey-progress" aria-label="Sample journey progress">
+<span>
+</span>
+<span>
+</span>
+<span>
+</span>
+<span>
+</span>
+<span>
+</span>
+<span>
+</span>
+<span>
+</span>
+<span>
+</span>
+</div>
+<div class="stage-detail" id="stage-detail">
+<div>
+<span class="section-number" id="detail-number">INSIDE STAGE 01</span>
+<h3 id="detail-title">Start with a clear target.</h3>
+<p id="detail-description">A campaign brief defines the region, company requirements, target roles and quantity. The workflow validates the input before it begins searching.</p>
+</div>
+<div class="detail-transform">
+<div>
+<span>INPUT</span>
+<p id="detail-input">Target region · job titles · quantity</p>
+</div>
+<span class="transform-arrow">→</span>
+<div>
+<span>OUTPUT</span>
+<p id="detail-output">A validated campaign brief</p>
+</div>
+</div>
+</div>
+</section>
+<section class="result-section">
+<div class="result-copy">
+<span class="section-number">02 / THE RESULT OF THE CONNECTIONS</span>
+<h2>A lead is useful when<br>the next step is clear<span>.</span>
+</h2>
+<p>The workflow prepares structured records and keeps research, verification outcomes and progress visible to the team.</p>
+<p class="small-note">The sample below is fictional. It illustrates the data journey, not a live run or measured performance.</p>
+<div class="quality-tags">
+<span>Company qualification</span>
+<span>Duplicate checks</span>
+<span>Verification routing</span>
+<span>Progress tracking</span>
+<span>Five-star prioritization</span>
+</div>
+</div>
+<div class="lead-artifact" id="lead-artifact">
+<div class="artifact-top">
+<span>
+<img src="logos/googlesheets.svg" alt=""> A prepared lead</span>
+<span class="sample-tag">SAMPLE</span>
+</div>
+<div class="artifact-body">
+<span class="artifact-monogram">CW</span>
+<div>
+<h3>Cedar Works</h3>
+<p>Fictional company · Business services</p>
+</div>
+<dl>
+<div>
+<dt>Contact</dt>
+<dd>Jordan Lee</dd>
+</div>
+<div>
+<dt>Role</dt>
+<dd>Operations Director</dd>
+</div>
+<div>
+<dt>Email</dt>
+<dd>jordan@example.com</dd>
+</div>
+<div>
+<dt>Verification</dt>
+<dd class="verification-value">Illustrative result</dd>
+</div>
+<div>
+<dt>Ranking</dt>
+<dd>★★★★☆ · Fictional example</dd>
+</div>
+<div>
+<dt>Destination</dt>
+<dd>Structured Google Sheets row</dd>
+</div>
+</dl>
+</div>
+<div class="artifact-footer">
+<i>
+</i>
+<span id="artifact-status">Watch the journey to follow this record.</span>
+</div>
+</div>
+</section>
+<section class="ranking-story">
+<div>
+<span class="section-number">BEYOND COLLECTING AN ADDRESS</span>
+<h2>Give the team a way<br>to prioritize<span>.</span>
+</h2>
+<p>The workflow includes a five-star ranking system that brings contact and profile signals into the output, helping the team decide what to review next.</p>
+</div>
+<div class="ranking-signals">
+<span>
+<b>★</b> Email-status signal</span>
+<span>
+<b>★</b> Role alignment</span>
+<span>
+<b>★</b> Profile picture</span>
+<span>
+<b>★</b> Connection signal</span>
+<span>
+<b>★</b> Recent-post activity</span>
+<p>Stars reflect the configured signals. They are not a guarantee of email validity, lead quality or conversion.</p>
+</div>
+</section>
+<section class="logic-section">
+<div>
+<span class="section-number">03 / THE LOGIC BETWEEN THE LOGOS</span>
+<h2>The connections are only<br>part of the build.</h2>
+</div>
+<div class="logic-cards">
+<article>
+<span>↳</span>
+<h3>More than one route</h3>
+<p>Website emails and contact enrichment take different paths. Website scraping has fallback steps when an initial response is not enough.</p>
+</article>
+<article>
+<span>◇</span>
+<h3>Rules before results</h3>
+<p>Keyword checks, role matching, quantity limits and verification outcomes guide what continues through the workflow.</p>
+</article>
+<article>
+<span>↻</span>
+<h3>Pick up the next batch</h3>
+<p>Processed-company checks and saved regional progress support subsequent runs and avoid repeating completed work.</p>
+</article>
+</div>
+</section>
+<section class="closing">
+<div>
+<span class="section-number">YOUR PROCESS, CONNECTED</span>
+<h2>What keeps your team<br>doing the same work twice?</h2>
+<p>I can connect the tools and steps around the way your business works.</p>
+</div>
+<a class="contact" href="mailto:seifmagdyyoussef@gmail.com?subject=Let%27s%20build%20an%20automation">Let's connect the dots ↗</a>
+</section>
+<p class="case-source-note">Reported outcomes come from the shared project case study and Ziad’s “40 Hours, 1 Click” carousel. The diagram illustrates the supplied 134-node workflow; the tool stack has evolved across versions. The sample journey uses fictional data.</p>
+</main>
+<footer>
+<a data-project-link href="../../index.html#projects">← Explore my other work</a>
+<span>Tool logos identify integrations · No affiliation implied</span>
+</footer>
+</body>
+</html>
