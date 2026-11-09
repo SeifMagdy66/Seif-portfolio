@@ -20,8 +20,17 @@ My work at Pollion includes:
 - **[Lead-generation automation](projects/lead-generation/)** — Connected
   workflows for company research, contact enrichment, verification and delivery.
 
-The portfolio also includes four earlier machine-learning projects. The public
-demos use fictional data and do not connect to Pollion's production systems.
+The public Pollion demos use fictional data and do not connect to production
+systems. Full production source code, private backends and business data are
+not included in this portfolio.
+
+My data-science projects are available to use, modify and share under their
+MIT licenses:
+
+- [Stroke Severity Prediction](https://github.com/SeifMagdy66/stroke_severity_project)
+- [Heart Disease Prediction](https://github.com/SeifMagdy66/heart-disease-prediction)
+- [Titanic Survival Prediction](https://github.com/SeifMagdy66/Titanic_Survival_Prediction)
+- [Gym Members Churn Prediction](https://github.com/SeifMagdy66/Gym-Members-Churn-Prediction)
 
 ## Skills
 
@@ -43,10 +52,15 @@ repository root from `main`.
 
 ## Usage and permissions
 
-This portfolio presents my work for viewing and evaluation. It is not offered
-as a reusable project template or a license to deploy the Pollion projects.
-Reuse requires written permission unless an existing license or other right
-already allows it. Earlier MIT releases retain their granted permissions.
+**Pollion projects:** Visitors may try the hosted demos. Reusing or deploying
+the project materials requires written permission unless an existing license
+or other right already allows it. The full production systems are not shared.
+
+**Data-science projects:** Reuse, modification and redistribution are allowed
+under each project's MIT license, with its copyright and license notices
+retained. The Pollion restrictions do not apply to those repositories.
+
+Earlier MIT releases retain their granted permissions.
 See [the usage terms](LICENSE) for scope, exceptions and previously granted
 rights. Third-party libraries, fonts and other assets retain their own licenses.
 

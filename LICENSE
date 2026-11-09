@@ -13,7 +13,7 @@ with the hosted demonstrations, and download the CV for professional
 consideration. Ordinary browser caching necessary for those activities is
 permitted.
 
-2. No additional permission for reuse
+2. Pollion demos and other portfolio materials
 
 Except as permitted below, no permission is granted to copy, modify,
 redistribute, sell, sublicense, rehost, deploy, or incorporate the project
@@ -21,8 +21,31 @@ code, designs, workflows, or other original materials into another product,
 service, website, or portfolio without prior written permission from the
 relevant rights holder. This applies to commercial and non-commercial reuse.
 Public availability alone does not grant these additional permissions.
+These restrictions do not apply to the separately licensed data-science
+projects identified in section 3.
 
-3. Pollion-related work and ownership
+3. Reusable data-science projects
+
+The following projects are published separately under the MIT licenses in
+their own repositories. They may be used, modified, and redistributed under
+those licenses, including for commercial purposes, while retaining the
+required copyright and license notices:
+
+- Stroke Severity Prediction:
+  https://github.com/SeifMagdy66/stroke_severity_project
+- Heart Disease Prediction:
+  https://github.com/SeifMagdy66/heart-disease-prediction
+- Titanic Survival Prediction:
+  https://github.com/SeifMagdy66/Titanic_Survival_Prediction
+- Gym Members Churn Prediction:
+  https://github.com/SeifMagdy66/Gym-Members-Churn-Prediction
+
+This portfolio's restrictions do not replace or narrow those MIT licenses.
+Third-party code, datasets, and other materials in those projects retain
+their own applicable terms. The MIT permissions for these data-science
+projects do not extend to the Pollion demos or other portfolio materials.
+
+4. Pollion-related work and ownership
 
 The Pollion project demonstrations are portfolio presentations, not a grant
 of rights to Pollion's production systems or business materials. Ownership
@@ -30,8 +53,11 @@ of employer-owned or jointly authored material remains with the respective
 rights holders. This notice does not transfer ownership or grant rights on
 their behalf. Permission requests must be approved by the rights holders
 whose material is involved.
+The full production source code, private backends, credentials, and live
+business data are not included in this portfolio. Viewing or interacting
+with a demo does not grant access to those production systems.
 
-4. Third-party materials
+5. Third-party materials
 
 Third-party libraries, fonts, logos, trademarks, and other third-party
 materials retain their applicable licenses and rights. This notice does not
@@ -39,7 +65,7 @@ replace, restrict, or remove those licenses or their required notices.
 In particular, jsPDF and its bundled components retain the license notices
 included in projects/pulse/vendor/jspdf.umd.min.js.
 
-5. Earlier releases and other existing rights
+6. Earlier releases and other existing rights
 
 Repository versions through commit
 ae8e7d95f6f9658f2a412d9ee3ff6a51052fb08e were published with an MIT license.
@@ -52,7 +78,7 @@ Nothing here limits rights provided by applicable law or GitHub's Terms of
 Service, including GitHub's rights to host the repository and users' rights
 to view and fork a public repository under those terms.
 
-6. Contact
+7. Contact
 
 For permission requests: seifmagdyyoussef@gmail.com.
 
